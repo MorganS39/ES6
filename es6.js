@@ -18,3 +18,12 @@ function checkScope() {
     console.log('Function scope i is: ', i);
     return i;
 }
+
+// Using the const keyword
+function printManyTimes(str) {
+    const SENTENCE = str + " is cool!";
+    for (let i = 0; i < str.length; i+=2) {
+      console.log(SENTENCE);
+    }
+}
+printManyTimes("freeCodeCamp");
