@@ -66,3 +66,14 @@ console.log(myConcat([1, 2], [3, 4, 5]));
 
 // Setting default parameters to a function
 const increment = (number, value = 1) => number + value;
+
+// Rest parameter with function parameters
+const sum = (x, y, z) => {
+  const args = [x, y, z];
+  return args.reduce((a, b) => a + b, 0);
+}
+//turns into 
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b, 0);
+}
+// using the rest parameter in the function, thus simplifying the problem.
