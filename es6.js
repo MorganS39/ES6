@@ -77,3 +77,12 @@ const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
 }
 // using the rest parameter in the function, thus simplifying the problem.
+
+//Using the spread operator to evaluate arrays in-place.
+//The arr2 argument allows us to transfer the contents of arr1 into arr2 easily
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];  // Change this line
+
+console.log(arr2);
