@@ -86,3 +86,12 @@ let arr2;
 arr2 = [...arr1];  // Change this line
 
 console.log(arr2);
+
+// Destructuring assignments ot extract values from objects
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+const {today, tomorrow} = HIGH_TEMPERATURES;
