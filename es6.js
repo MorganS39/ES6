@@ -216,3 +216,15 @@ const lowercaseString = (string) => {
 }
 
 export {uppercaseString, lowercaseString};
+
+//Reuse JS code using import
+import {uppercaseString, lowercaseString} from './string_functions.js';
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+//Using * to import everything from a file
+import * as stringFunctions from "./string_functions.js";
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
