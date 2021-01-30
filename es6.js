@@ -205,3 +205,14 @@ temp = thermos.temperature; // 26 in Celsius
   </body>
 </html>
 */
+
+//Export to share a code block
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export {uppercaseString, lowercaseString};
