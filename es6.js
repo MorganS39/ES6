@@ -195,3 +195,13 @@ const thermos = new Thermostat(76); // Setting in Fahrenheit scale
 let temp = thermos.temperature; // 24.44 in Celsius
 thermos.temperature = 26;
 temp = thermos.temperature; // 26 in Celsius
+
+//Create a module script to link JS to a html file
+// Example commented as not to break other code by accidentally importing!
+/*
+<html>
+  <body>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+*/
